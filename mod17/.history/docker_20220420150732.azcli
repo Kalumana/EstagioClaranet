@@ -1,0 +1,3 @@
+docker image build -t azureacrregistrytf.azurecr.io/site:latest . 
+
+docker login azureacrregistrytf.azurecr.io -u azureacrregistrytf -p Twl+4bdDeddIZYCUinarBbj+vZFkp9wm 

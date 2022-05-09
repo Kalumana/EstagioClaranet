@@ -1,0 +1,5 @@
+az acr login --name ""
+
+docker pullacrregistri.azurecr.io/..
+
+docker run -d -p 8080:80 "endereço"

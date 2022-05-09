@@ -1,0 +1,14 @@
+# entrar no azure
+az login 
+
+#criar um resource group 
+az group create --location northeurope --name terraformstate 
+
+#criar storage account
+az storage account create --name tfstorageaz --resource-group Estagio-AK --location northeurope --sku Standard_LRS
+
+#criar container 
+az storage container create -n Estagio-AK --account-name tfstorageaz
+
+#recuperar chave azure blob storage 
+az storage account keys list --account-name tfstorageaz --resource-group Estagio-AK

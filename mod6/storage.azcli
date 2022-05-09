@@ -1,0 +1,8 @@
+az login 
+
+
+az group create --location northeurope --name terraformstate 
+
+az storage account create --name tfstorageaz --resource-group Estagio-AK --location northeurope --sku Standard_LRS
+
+az storage container create -n Estagio-AK --account-name tfstorageaz
